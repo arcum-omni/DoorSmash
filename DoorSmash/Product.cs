@@ -10,6 +10,7 @@ namespace DoorSmash
     {
         #region Properties
         private string name;
+        private double price;
 
         public int ProductID { get; set; }
 
@@ -28,14 +29,31 @@ namespace DoorSmash
                 {
                     throw new ArgumentException($"{nameof(Product.Name)} cannot be null or whitespace");
                 }
-                else if (value.Length > 50) {
+                else if (value.Length > 50)
+                {
                     throw new ArgumentException($"{nameof(Product.Name)} cannot be more than 50 characters.");
                 }
                 name = value;
             }
         }
 
-        public double Price { get; set; }
+        public double Price
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                // valule is the value coming in (getting set)
+                if (value < 0)
+                {
+                    string msg = $"{nameof(Price)} must be a positive value";
+                    throw new ArgumentOutOfRangeException(msg);
+                }
+                price = value;
+            }
+        }
 
         public string Description { get; set; }
         #endregion
@@ -48,5 +66,9 @@ namespace DoorSmash
         {
             Name = productName;
         }
+
+
+
+
     }
 }

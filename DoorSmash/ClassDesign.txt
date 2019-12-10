@@ -1,14 +1,14 @@
 ﻿Class Design
 
-Restuarants
-  - RestuarantID (RID), Primary Key
+Restaurants
+  - RestaurantID (RID), Primary Key
   - Name
   - address/location, GRMS coordinates (use maps to show distance)
   - business hours
   - food prep time
   - delivery time (calculated from address)
   - Total Time ()
-  - Food Category (steak, chicken, fast, asian)
+  - Food Category (steak, chicken, fast, asian, italian, pizza)
   - Menu List<Products>
   - rating
   - delivery fee
