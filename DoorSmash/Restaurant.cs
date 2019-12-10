@@ -10,6 +10,13 @@ namespace DoorSmash
     {
         private string _category;
 
+        // no arg constructor
+        public Restaurant()
+        {
+            // Init products as empty list
+            Products = new List<Product>();
+        }
+
         public int RestaurantID { get; set; }
 
         public string Name { get; set; }
