@@ -1,0 +1,9 @@
+open source winforms controls
+syncfusion.com
+
+- Solution (Xamarin App)
+	iOs Project
+	Android Project
+	UWP Project
+	Shared Project - Business Logic
+	

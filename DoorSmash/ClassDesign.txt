@@ -1,0 +1,26 @@
+﻿Class Design
+
+Restuarants
+  - RestuarantID (RID), Primary Key
+  - Name
+  - address/location, GRMS coordinates (use maps to show distance)
+  - business hours
+  - food prep time
+  - delivery time (calculated from address)
+  - Total Time ()
+  - Food Category (steak, chicken, fast, asian)
+  - Menu List<Products>
+  - rating
+  - delivery fee
+  - minimum order $
+
+Products
+  - ProductID (PID), Primary Key
+  - Name (Required)
+  - Description
+  - Price
+
+Ratings
+  - RID
+  - Star Rating 1-5
+  - emailAddress (of customer/reviewer)
